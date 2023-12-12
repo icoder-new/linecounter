@@ -24,13 +24,13 @@ You can use either the `-file` flag or the `-dir` flag, but not both at the same
 To run the Line Counter tool, execute the following command:
 
 ```shell
-go run linecounter.go -file <file>
+go run main.go -file <file>
 ```
 
 or
 
 ```shell
-go run linecounter.go -dir <directory>
+go run main.go -dir <directory>
 ```
 
 The tool will count the number of non-comment lines in the specified file or directory and display the results.
@@ -40,18 +40,18 @@ The tool will count the number of non-comment lines in the specified file or dir
 Count the number of non-comment lines in a single file:
 
 ```shell
-go run linecounter.go -file myfile.go
+go run main.go -file myfile.go
 ```
 
 Count the number of non-comment lines in all Go source code files in a directory:
 
 ```shell
-go run linecounter.go -dir mydirectory
+go run main.go -dir mydirectory
 ```
 
 ## License
 
-This project is licensed under the [MIT License](https://en.wikipedia.org/wiki/MIT_License).
+This project is licensed under the [MIT License](LICENSE).
 
 Feel free to modify and use this tool to count lines in Go source code files as per your requirements.
 
