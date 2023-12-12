@@ -22,7 +22,7 @@ func main() {
 	flag.Parse()
 
 	if (*fileFlag == "" && *dirFlag == "") || (*fileFlag != "" && *dirFlag != "") {
-		fmt.Println("Usage: go run linecounter.go [-file <file>] [-dir <directory>]")
+		fmt.Println("Usage: go run main.go [-file <file>] [-dir <directory>]")
 		return
 	}
 
@@ -60,7 +60,7 @@ func main() {
 			log.Fatal(err)
 		}
 	} else {
-		fmt.Println("Usage: go run linecounter.go [-file <file>] [-dir <directory>]")
+		fmt.Println("Usage: go run main.go [-file <file>] [-dir <directory>]")
 		return
 	}
 
